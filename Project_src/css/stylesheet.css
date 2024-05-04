@@ -1,0 +1,574 @@
+
+/* Hello professor, I wanted to make this project a little bit to my taste, I like military video games so I took this subject as a base, Greetings and thanks for the course! */
+
+/* import fonts from Google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Quantico:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+/* placing the military background image  */
+html{  
+  background-image: url(../css/images/backgrounds-camouflage.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  
+}
+
+/* Adding styling to the main title, font size 90px, centred and military font style */
+h1{
+  font-family: "Black Ops One", system-ui;
+  font-weight: 450;
+  font-style:normal;
+  font-size: 90px;
+  text-align:center;
+}
+
+/* Adding to the title 2 military style lettering */
+h2{
+  font-family: "Black Ops One", system-ui;
+  font-weight: 500;
+  font-size: 50px;
+}
+/* Adding military-style lettering to heading paragraphs */
+header p{
+  font-family:"Quantico", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 30px;
+}
+
+/* I add margin 0 auto, I add Arial font in case my military font styles don't work, padding 0 and 20px*/
+body{
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 0 20px;
+  width: 85%;
+  margin:0 auto;
+}
+
+/* To the header, nav, main, aside footer I place a top margin of 5px. */
+header,nav,main,aside,footer{
+  margin-top: 5px;
+}
+
+/* To the links I place purple lettering and without decoration */
+a{
+  text-decoration: none;
+  color: purple;
+}
+
+/* When you hover the mouse over them, they are underlined. */
+a:hover{
+  text-decoration: underline;
+
+}
+
+/* I style the title link with military style letters and a different background colour to make it stand out. */
+.skip-link{
+  background-image: linear-gradient(rgb(18, 138, 0,0.7),rgb(0, 64, 0,0.7));
+  color: black;
+  padding: 15px;
+  float: right;
+  border-bottom-left-radius: 10px;
+  color:whitesmoke;
+  font-family:"Quantico", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+/* I style the link in the title when the mouse hovers over it, it slowly increases in size. */
+.skip-link:hover{
+  background-image: linear-gradient(rgb(0, 64, 0),rgb(18, 138, 0));
+  /* Increase the size of the element in 10% */
+  transform: scale(1.1);
+  /* Add a smooth transition for fancy animation */
+  transition: transform 0.3s ease;
+}
+
+/* To the header I apply gradient background colour, rounded corners and shadow. */
+header{
+  background-image: linear-gradient(to top,rgb(98, 108, 0),rgba(26, 118, 37, 0.65));
+  padding: 15px;
+  text-align: center;
+  color: rgb(49, 46, 46);
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+/* To the GITHUB link I add military font style, font size 30px and width 50%. */
+.link-github{
+  font-family:"Quantico", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 30px;
+  width: 50%;
+}
+/* Yellow star */
+path{
+  fill:rgb(189, 209, 5);  
+}
+
+/* Styling for the first child div containing an SVG element */
+div:nth-child(1) svg{
+  width: 30px;
+  height: 30px;
+  transition: transform 0.5s ease-in-out;
+  transform-origin: center center; 
+}
+
+/* Style for the first child div that contains an SVG element when the mouse is over it */
+div:nth-child(1) svg:hover{
+  transform: rotate(360deg);
+}
+
+
+/* ---------------------------------------------------------------------------------- */
+/* Navegation */
+
+/* I add styling to the navigation so that they are placed in a row and separately. */
+nav ul{
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+  padding: 0;
+}
+/* Colour style, font style and size */
+nav li{
+  box-sizing: border-box;
+  margin: 0 5px;
+  flex:1;
+  text-align: center;
+  padding: 10px 8px;
+  background-image: linear-gradient(to top left,rgb(236, 233, 81),rgb(48, 125, 4));
+  font-family:"Quantico", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 18px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Style of links is black and when the mouse is over them they increase in size and are underlined. */
+
+  nav a{
+    text-decoration: none;
+    color: black;
+  }
+
+  nav li:hover{
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+  }
+/* ----------------------------------------------------------------------------------- */
+
+/* Setting the Stage + Modern CSS Under the Spotlight */
+
+/* I place both paragraphs in two single-row columns using a grid. */
+  main #about{
+    display: grid;
+    grid-template-columns:1fr 1fr;
+    column-gap: 10px;
+    margin-bottom: 15px;
+  }
+
+/* Setting the Stage 
+I add color style gradiente, border radius and box shadow */
+  main #about section:nth-of-type(1){
+    background-color: rgba(75, 83, 32,0.8);
+    color:rgba(203, 203, 203);
+    padding: 28px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  }
+  /* Style for the title */
+  main #about section:nth-of-type(1) h2{
+    text-align: center;
+    margin-bottom: 18px;
+  }
+  /* Paragraph style */
+  main #about section:nth-of-type(1) p{
+    text-align: justify;
+    line-height: 1.8;
+    font-family: "Quantico", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 16px;
+  }
+  /* I change the colour of the links to be more noticeable. */
+  main #about section:nth-of-type(1) p a{
+    color:rgb(184, 157, 184);
+  }
+/* ------------------------------------------------------------------ */
+/* Modern CSS Under the Spotlight */
+  /* Overall paragraph style */
+  main #about section:nth-of-type(2){
+    background-color:  rgba(28,31,12,0.8);
+    color:rgb(203, 203, 203);
+    padding: 0.7em;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    padding: 0 27px;
+  }
+  /* Style for the title */
+  main #about section:nth-of-type(2) h2{
+    text-align: center;
+    margin-bottom: 0;
+  }
+  /* Paragraph style */
+  main #about section:nth-of-type(2) p{
+    text-align: justify;
+    line-height: 1.8;
+    font-family: "Quantico", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 16px;
+  }
+  /* Style for the list */
+  main #about section:nth-of-type(2) ul li{
+    text-align: justify;
+    line-height: 1.5;
+    font-family: "Quantico", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 16px;
+  }
+
+  /* Styling to replace the circular bands with square bands. */
+    main #about section:nth-of-type(2) ul{
+      list-style-type: none;
+      padding-left: 0; 
+    }
+
+    main #about section:nth-of-type(2) li{
+      position: relative; 
+      padding-left: 30px;
+    }
+
+    main #about section:nth-of-type(2) li::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 10px;
+      height: 10px;
+      background-color: rgb(173, 171, 171);
+      margin-right: 5px;
+    }
+/* ----------------------------------------------------------------------- */
+/* Guidelines */
+/* I apply grid to the grid, background colour and font colour. */
+main div #guidelines{
+  display: grid;
+  grid-template-columns:1fr;
+  row-gap: 20px;
+  padding: 40px;
+  color:rgba(28,31,12,0.8);
+  background-color: rgba(163, 179, 82,0.8);
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+ /* Style for the title */
+main div #guidelines h2{
+  text-align: center;
+}
+/* Paragraph style */
+main div #guidelines p{
+  text-align: justify;
+  line-height: 1.8;
+  font-family: "Quantico", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 16px;
+}
+ /* Style for the title */
+main div #guidelines h3{
+  text-align: center;
+  text-decoration: underline;
+  font-size: 18px;
+}
+/* 
+I apply style to the link, different background colour to make it stand out, it covers almost the whole width. */
+main div #guidelines .link-guidelines{
+  display: block;
+  text-align: center;
+  border-radius: 50px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  background-color: #4B5320;
+  color: rgb(173, 171, 171);
+  font-size: 20px;
+  padding: 10px;
+  
+}
+  /* Increase the size of the element in 10% and Add a smooth transition for fancy animation */
+main div #guidelines .link-guidelines:hover{
+  transform: scale(1.1);
+  transition: transform 0.3s ease;
+}
+/* ------------------------------------------------------------- */
+/* Contribute + Steps to Contribute + Source files*/
+/* I apply grid to display both in the same row with only three columns. */
+main div #contribute{
+  display: grid;
+  grid-template-columns:0.4fr 1fr 0.3fr;
+  column-gap: 20px;
+  padding: 0.7em;  
+}
+/* "Contribute" style */
+  main div #contribute section:nth-of-type(1){
+    background-color: rgba(75, 83, 32,0.9);
+    color:rgb(203, 203, 203);
+    border-radius: 10px; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    padding: 30px;
+  }
+  /* Paragraph style */
+  main div #contribute section:nth-of-type(1) p {
+    text-align: justify;
+    line-height: 1.8;
+    font-family: "Quantico", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 16px;
+  } 
+/* "Steps to Contribute" style*/
+  main div #contribute section:nth-of-type(2){
+    background-color:  rgba(28,31,12,0.9);
+    color:rgb(203, 203, 203);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  }
+  /* Style for the heading 3 */
+  main div #contribute section:nth-of-type(2) h3{
+    font-family: "Black Ops One", system-ui;
+    font-weight: 450;
+    font-style: normal;
+    font-size: 40px;
+    text-align: center;
+  }
+  /* Style for the ordered list */
+    main div #contribute section:nth-of-type(2) ol{
+      box-sizing: border-box;
+      padding: 7px 40px;
+    }
+
+    main div #contribute section:nth-of-type(2) ol li{
+      margin-bottom: 15px;
+      text-align: justify;
+      line-height: 1.8;
+      font-family: "Quantico", sans-serif;
+      font-weight: 500;
+      font-style: normal;
+      font-size: 16px;
+    }
+
+/* "Source files" style */
+  main div #contribute footer{
+    margin-top: 0px;
+    text-align: center;
+  }
+
+  /* Font styles */
+  main div #contribute footer h3{
+    font-family: "Black Ops One", system-ui;
+    font-weight: 450;
+    font-style: normal;
+    font-size: 30px;
+  }
+
+  /* Each link is placed in its own box with a light background colour. */
+  main div #contribute footer a{
+    display: block;
+    margin-bottom: 20px;
+    background-color: rgb(203, 203, 203);
+    width: 120px;
+    margin: 40px 45px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+    font-size:20px;
+    line-height: 1.8;
+    font-family: "Quantico", sans-serif;
+    font-weight: 500;
+  }
+  /* Increase the size of the element in 10% and Add a smooth transition for fancy animation */
+  main div #contribute footer a:hover{
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+  }
+
+/* -------------------------------------------------------- */
+
+/* "Currently Staged Style" style*/
+  .profile{
+    background-color:  rgba(28,31,12,0.9);
+    color: rgb(203, 203, 203);
+    text-align: center;
+    padding-bottom: 30px;
+    padding-top: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    margin-bottom: 15px;
+  }
+  /* I place the items in the list in a single row. */
+  .profile ul{
+    display: flex;    
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 5px;
+    margin-bottom: 40px;
+  }
+  /* font style, margins and flex 1 */
+  .profile ul li{
+    flex:1;
+    margin-right: 15px;
+    font-size: 20px;
+    font-family: "Quantico", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+  }
+   /* Style for the h4*/
+  .profile h4{
+    font-family: "Black Ops One", system-ui;
+    font-weight: 450;
+    font-style: normal;
+    font-size: 40px;
+    text-align: center;
+  }
+
+  /* Link style with lighter green background and rounded border. */
+  .profile a:nth-child(3){
+    display: block;
+    text-align: center;
+    border-radius: 50px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    background-color: #4B5320;
+    color: rgb(173, 171, 171);
+    font-size: 20px;
+    padding: 10px;
+    width: 80%;
+    margin: auto;
+  }
+  /* Increase the size of the element in 10% and Add a smooth transition for fancy animation */
+  .profile a:nth-child(3):hover{
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+  }
+
+  /* I change the style of only the arguments of each field title, author, twitter and website. */
+    .profile li span:nth-of-type(2){
+      color: rgb(198, 0, 0);
+      font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+
+    .profile li span:nth-of-type(2) a{
+      color: rgb(198, 0, 0);
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+
+  /* _________________________________________________________________________ */
+/* "Featured Styles" style */
+  #styles{
+    border: 1px solid transparent;
+    background-color: rgba(163, 179, 82,0.8);
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  }
+  /* I place the items in the list in a single row. */
+  #styles ul{
+    display: flex;  
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 0; 
+    margin-bottom: 40px;
+  }
+  /* I add styling to each item in the list */
+  #styles ul li{
+    flex:1;
+    margin-right: 25px;
+    font-size: 20px;
+    font-family: "Quantico", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    width: 205px;
+  }
+  /* I add styling only to the third element "a" */
+  #styles a:nth-child(3){
+    display: block;
+    text-align: center;
+    border-radius: 50px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    background-color: #4B5320;
+    color: rgb(173, 171, 171);
+    font-size: 20px;
+    padding: 10px;
+    width: 80%;
+    margin: auto auto 27px auto;
+  }
+  /* Increase the size of the element in 10% and Add a smooth transition for fancy animation */
+  #styles a:nth-child(3):hover{
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+  }
+/* ------------------------------------------------------------------------------------------ */
+/* Footer style */
+  .page-footer{
+    background-color: rgba(166,170,144,0.8);
+    padding: 35px;
+    text-align: center;  
+    box-sizing: border-box;  
+    border-radius: 50px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    font-family: "Quantico", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    margin: 20px 0;
+  }
+  /* I remove any list style  */
+  .page-footer ul{
+    list-style-type: none;
+    font-size: 25px;
+  }
+
+  .page-footer p{
+    font-size: 20px;
+  }
+
+
+  .page-footer ul a{
+    list-style-type: none;
+    font-size: 25px;
+  }
+
+/* Style for when the user is viewing the website from a mobile phone or tablet. */
+@media screen and (min-width: 320px) and (max-width: 768px) {
+
+  /* I keep the style of the site */
+  h1{
+    font-family: "Black Ops One", system-ui;
+    font-weight: 450;
+    font-style:normal;
+    font-size: 80px;
+    text-align:center;
+  }
+
+  body{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 730px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }  
+  /* I remove the grid so that everything looks like a single column, adaptable to the screens. */
+    main #about{
+      display: block;
+    }
+    
+    main div #contribute{
+      display: block;
+      
+    }
+
+    main div #contribute footer a{
+      display: inline-block;
+    }
+
+}
