@@ -1,0 +1,1 @@
+Using CSS, construct a complete visual design for the popular "Style Stage" challenge at https://stylestage.dev/. Your design must be your very own, and you cannot use a CSS framework or template - it must be original work.
